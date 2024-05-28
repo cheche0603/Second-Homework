@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserSignIn</title>
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+
+        <header>
+            <div class="container">
+                <div class="topbar--bg">
+
+                    <ul class="topbar">
+
+                        <li class="topbar-item" id="SignIn">
+                            <a class="topbar-item-link" href="./UserSignIn.html">登入/註冊</a>
+                        </li>
+
+                        <li class="topbar-item">
+                            <a class="topbar-item-link" href="#!">客服中心</a>
+                        </li>
+
+                        <li class="topbar-item">
+                            <a class="topbar-item-link" href="#!">我的優惠券</a>
+                        </li>
+
+                        <li class="topbar-item">
+                            <a class="topbar-item-link" href="#!">購物車</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content_flex--bg">
+                <div class="container">
+                    <div class="content_flex">
+                        <div class="col_logo">
+                            <a href="https://www.pcone.com.tw/" class="logo"></a>
+                        </div>
+
+                        <div class="col_searchinput">
+                            <div class="search">
+
+                                <input type="text" class="searchinput" size="30"><a href="#!" class="search_btn">
+                                    <div class="search_img"></div>
+                                </a>
+
+                                <div class="hotword_list">
+                                    <div class="hotword-title">熱門關鍵字:</div>
+                                    <ul class="hotword">
+
+                                        <li class="hotword-item">
+                                            <div class="hotword-item-link">
+                                                <a href="#!">AAA</a>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="hotword-item">
+                                            <div class="hotword-item-link">
+                                                <a href="#!">BBB</a>
+                                            </div>
+                                        </li>
+
+                                        <li class="hotword-item">
+                                            <div class="hotword-item-link">
+                                                <a href="#!">CCCC</a>
+                                            </div>
+                                        </li>
+
+                                        <li class="hotword-item">
+                                            <div class="hotword-item-link">
+                                                <a href="#!">DDDDD</a>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_car">
+                            <a href="#!" class="carlink">
+                                <div class="carimg"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="SignIn_Window-bg">
+            <div class="container">
+                <div class="SignIn_Window">
+                    <div class="content">
+
+                        <div class="login-manager">
+                            
+                            <div class="login-header">
+                                <div class="title"> </div>
+                            </div>
+                            <div class="form">
+                                <form class="UserDATA" method="post">
+                                    <input id="email" type="email"  placeholder="請輸入您的電子郵件帳號"  >
+                                    <input id="password" type="password"  placeholder="請輸入您的密碼" >
+                                    <input id="login" class="btn" type="submit" value="送出">
+                                    <input id="register" class="btn" type="button" value="註冊">
+
+                                </form>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+
+
+
+            </div>
+        </div>
+    </div>
+    <script  src="./JS/User.js"></script>
+</body>
+</html>

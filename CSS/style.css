@@ -798,7 +798,7 @@ header {
   transform: translate(0, -8px);
 }
 
-.SignIn_Window-bg{
+.SignIn_Window-bg , .Register_Window-bg{
   position: fixed;
   z-index: 10;
   top: 0;
@@ -808,7 +808,7 @@ header {
   background-color: rgba(0, 0, 0, .65);
 }
 
-.SignIn_Window{
+.SignIn_Window , .Register_Window{
   border-radius: 10px;
   position: absolute;
   margin: 40px auto;
@@ -820,7 +820,7 @@ header {
   z-index: 0;
 }
 
-.SignIn_Window .content{
+.SignIn_Window .content, .Register_Window .content{
   margin: 0 auto;
   padding: 42px 0 170px;
   background-color: #fff;
@@ -830,13 +830,13 @@ header {
   box-sizing: border-box;
 }
 
-.login-manager{
+.login-manager , .Register-manager{
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.login-header{
+.login-header , .Register-header{
   border: 0;
   position: static;
   margin-bottom: 40px;
@@ -846,7 +846,7 @@ header {
 
 }
 
-.SignIn_Window .title{
+.SignIn_Window .title , .Register_Window .title{
   display: block;
   margin: 0 auto;
   width: 178px;
@@ -858,13 +858,13 @@ header {
 
 }
 
-.login-manager .form{
+.login-manager .form , .Register-manager .form{
   display: block;
   margin-top: 0em;
   unicode-bidi: isolate;
 }
 
-.login-manager .form input{
+.login-manager .form input , .Register-manager .form input{
   font-size: 16px;
   box-sizing: border-box;
   border: 0;
@@ -876,7 +876,7 @@ header {
   padding: 0;
 }
 
-.login-manager .form .btn{
+.login-manager .form .btn , .Register-manager .form .btn{
   margin-top: 10px;
   user-select: none;
   height: 46px;
@@ -885,10 +885,18 @@ header {
   border-radius: 5px;
   font-size: 15px;
   letter-spacing: 2px;
-  background-color: #b4b4b4;
   color: #fff;
   cursor: pointer;
   text-decoration: none;
   outline: none;
   border: 0;
+}
+.login-manager .form .login_btn , .Register-manager .form .login_btn{
+  background-color: rgba(182, 37, 37, 0.808);
+
+}
+
+.login-manager .form .register_btn , .Register-manager .form .register_btn{
+  background-color: rgb(49, 49, 240);
+
 }

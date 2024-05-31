@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UserSignIn</title>
+    <title>Register</title>
     <link rel="stylesheet" href="./CSS/normalize.css">
     <link rel="stylesheet" href="./CSS/style.css">
     
@@ -93,25 +93,22 @@
             </div>
         </header>
 
-        <div class="SignIn_Window-bg">
+        <div class="Register_Window-bg">
             <div class="container">
-                <div class="SignIn_Window">
+                <div class="Register_Window">
                     <div class="content">
 
-                        <div class="login-manager">
+                        <div class="Register-manager">
                             
-                            <div class="login-header">
+                            <div class="Register-header">
                                 <div class="title"> </div>
                             </div>
                             <div class="form">
                                 <form class="UserDATA" method="post">
-                                    <input id="email" type="email"  placeholder="請輸入您的電子郵件帳號"  >
-                                    <input id="password" type="password"  placeholder="請輸入您的密碼" >
-                                    <input id="login" class="btn login_btn" type="submit" value="送出">
-                                    <a href="./register.html">
-                                        <input id="register" class="btn register_btn" type="button" value="註冊新帳號">
-                                    </a>
-                                    
+                                    <input id="name" class="" type="text" placeholder="創建您的名字">
+                                    <input id="email" type="email"  placeholder="創建您的電子郵件帳號"  >
+                                    <input id="password" type="password" autocomplete=”off  placeholder="創建您的密碼" >
+                                    <input id="register" class="btn register_btn" type="button" value="註冊">
                                 </form>
                                 
                             </div>
@@ -128,7 +125,6 @@
         </div>
     </div>
     <script  src="./JS/User.js"></script>
-    <script>
-        document.getElementById("login").addEventListener("click",login);</script>
+    <script>document.getElementById("register").addEventListener("click",register);</script>
 </body>
 </html>
